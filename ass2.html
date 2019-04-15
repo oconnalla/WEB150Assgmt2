@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!-- for some reason my JS is not recognizing my getElementById method in my JS file, so I put it inside the HTML as an alternative option -->
+        <!-- <script type="text/javascript" src="ass2.js"></script> -->
+    </head>
+    <body>
+        <p id="total"> </p>
+
+
+        <script>var sumFunc = function(){
+                var userName;
+                while (!userName){
+                  userName = prompt('Let\'s play the sum game. Please enter your name');
+                }
+                if(userName !== ''){
+                  var sum1 = parseInt(prompt('Enter first number'));
+                  var sum2 = parseInt(prompt('Enter second number'));
+                  var totaled =(sum1 + sum2);
+                  var totalEl = document.getElementById('total');
+                  totalEl.textContent = 'Hi, ' + userName + '! The sum of ' + sum1 + ' + ' + sum2 + ' is ' + totaled;
+                }
+              };
+              
+              sumFunc();</script>
+    </body>
+</html>
