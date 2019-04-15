@@ -8,7 +8,6 @@ var sumFunc = function(){
     var sum2 = parseInt(prompt('Enter second number'));
     var totaled =(sum1 + sum2);
     var totalEl = document.getElementById('total');
-    console.log(typeof totalEL);
     totalEl.textContent = 'Hi, ' + userName + '! The sum of ' + sum1 + ' + ' + sum1 + ' is ' + totaled;
   }
 };
