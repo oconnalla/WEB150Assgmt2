@@ -13,9 +13,10 @@
         <!-- version 2 with JS in the html -->
             <script>var sumFunc = function(){
                 var userName;
-                while (!userName){
-                  userName = prompt('Let\'s play the sum game. Please enter your name');
-                }
+                do{ userName = prompt('Let\'s play the sum game. Please enter your name');
+            }while (!userName);
+            alert('Hi, ' + userName + ' let\'s get started. ');
+                 
                 if(userName !== ''){
                   var sum1 = parseInt(prompt('Enter first number'));
                   var sum2 = parseInt(prompt('Enter second number'));
